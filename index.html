@@ -2,12 +2,15 @@
 <html>
 
 <head>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
     body {
       background: #FFFDD0;
       font-family: 'Futura URW Extra Bold', Arial Block, sans-serif;
       font-weight: bold;
-      align: center;
+      position: relative;
+      left: -109px;
     }
 
     .container {
@@ -111,66 +114,223 @@
       border-color: #000000;
       text-align: center;
       padding: 5em;
+      margin-left: 5em;
+      margin-right: 5em;
       grid-row: 7;
     }
 
-    /* Media query for screens smaller than 600px */
-    @media only screen and (max-width: 600px) {
-      .container {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    @media (max-width: 576px) {
+      body {
+        position: relative;
+        left: 0px;
+        /* Adjust as needed */
       }
 
-      /* Adjust styles for smaller screens */
-      .logo,
-      .header,
-      .cta,
-      .gallery,
-      .topics,
-      .main-content,
+      .logo {
+        margin-left: 7em;
+        margin-right: 7em;
+      }
+
+      .header {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+
+      .cta {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+
+      .gallery {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+
+      .topics {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+
+      .main-content {
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
       .footer {
-        margin-left: -.4em;
-        margin-right: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
       }
     }
 
-    /* Media query for screens between 600px and 1200px */
-    @media only screen and (min-width: 601px) and (max-width: 1200px) {
-      .container {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+    @media (min-width: 576px) and (max-width: 768px) {
+      body {
+        position: relative;
+        left: -70px;
+        /* Adjust as needed */
       }
 
-      /* Adjust styles for medium screens */
-      .logo,
-      .header,
-      .cta,
-      .gallery,
-      .topics,
-      .main-content,
+      .logo {
+        margin-left: 14em;
+        margin-right: 14em;
+      }
+
+      .header {
+        margin-left: 6em;
+        margin-right: 6em;
+      }
+
+      .cta {
+        margin-left: 6em;
+        margin-right: 6em;
+      }
+
+      .gallery {
+        margin-left: 6em;
+        margin-right: 6em;
+      }
+
+      .topics {
+        margin-left: 4em;
+        margin-right: 4em;
+      }
+
+      .main-content {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+
       .footer {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      body {
+        position: relative;
+        left: -95px;
+        /* Adjust as needed */
+      }
+
+      .logo {
+        margin-left: 21em;
+        margin-right: 21em;
+      }
+
+      .header {
+        margin-left: 9em;
+        margin-right: 9em;
+      }
+
+      .cta {
+        margin-left: 9em;
+        margin-right: 9em;
+      }
+
+      .gallery {
+        margin-left: 9em;
+        margin-right: 9em;
+      }
+
+      .topics {
+        margin-left: 6em;
+        margin-right: 6em;
+      }
+
+      .main-content {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+
+      .footer {
+        margin-left: 3em;
+        margin-right: 3em;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      body {
+        position: relative;
+        left: -88px;
+        /* Adjust as needed */
+      }
+
+      .logo {
+        margin-left: 28em;
+        margin-right: 28em;
+      }
+
+      .header {
+        margin-left: 12em;
+        margin-right: 12em;
+      }
+
+      .cta {
+        margin-left: 12em;
+        margin-right: 12em;
+      }
+
+      .gallery {
+        margin-left: 12em;
+        margin-right: 12em;
+      }
+
+      .topics {
+        margin-left: 8em;
+        margin-right: 8em;
+      }
+
+      .main-content {
+        margin-left: 4em;
+        margin-right: 4em;
+      }
+
+      .footer {
+        margin-left: 4em;
+        margin-right: 4em;
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      body {
+        position: relative;
+        left: -109px;
+        /* Adjust as needed */
+      }
+
+      .logo {
+        margin-left: 35em;
+        margin-right: 35em;
+      }
+
+      .header {
+        margin-left: 15em;
+        margin-right: 15em;
+      }
+
+      .cta {
+        margin-left: 15em;
+        margin-right: 15em;
+      }
+
+      .gallery {
+        margin-left: 15em;
+        margin-right: 15em;
+      }
+
+      .topics {
+        margin-left: 10em;
+        margin-right: 10em;
+      }
+
+      .main-content {
         margin-left: 5em;
         margin-right: 5em;
       }
-    }
 
-    /* Media query for screens between than 1200px and 1279px*/
-    @media only screen and (min-width: 1201px) and (max-width: 1279px) {
-      .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
-      }
-
-      /* Adjust styles for larger screens */
-      .logo,
-      .header,
-      .cta,
-      .gallery,
-      .topics,
-      .main-content,
       .footer {
-        margin-left: 10em;
-        margin-right: 10em;
+        margin-left: 5em;
+        margin-right: 5em;
       }
     }
   </style>
